@@ -1,0 +1,89 @@
+/* .vitepress/theme/custom.css */
+
+/* === PENGATURAN GLOBAL & LAYOUT LEBAR PENUH === */
+:root {
+  /* Layout Lebar Penuh */
+  --vp-doc-max-width: 100%;
+  --vp-layout-max-width: 100%;
+
+  /* Kustomisasi Lainnya */
+  --vp-aside-width: 340px;
+  --vp-home-hero-image-filter: blur(0);
+  --vp-home-hero-image-transform: scale(1);
+}
+
+.VPDoc .container,
+.VPDoc .content {
+  max-width: 100% !important;
+}
+
+/* === GAYA HERO SECTION LAMA (Bisa dihapus atau biarkan) === */
+@media (min-width: 960px) {
+  .VPHomeHero .image-src {
+    display: block !important;
+    max-width: 256px !important;
+    max-height: 256px !important;
+  }
+  .VPHomeHero .container {
+    display: flex;
+    align-items: center;
+  }
+  .VPHomeHero .main {
+    flex-shrink: 0;
+  }
+  .VPHomeHero .image {
+    flex-shrink: 0;
+    margin-left: 64px;
+  }
+}
+
+/* === GAYA BANNER KONTEN === */
+.content-banner {
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.content-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* === GAYA BARU UNTUK JUDUL HERO KUSTOM === */
+.custom-hero-container {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.super-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+  margin: 0;
+}
+
+.main-title {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin: 8px 0;
+  letter-spacing: -1.5px;
+  /* Warna gradien seperti contoh */
+  background: -webkit-linear-gradient(45deg, #8995ff, #ffffff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+  margin: 0;
+  letter-spacing: -0.5px;
+}
