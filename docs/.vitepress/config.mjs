@@ -1,7 +1,6 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/vertex-data/',
   title: "Vertex Data",
   description: "Mencapai Puncak Keahlian Data",
   head: [
